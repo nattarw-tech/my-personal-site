@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Aptos", "Segoe UI", "Calibri", "Arial", sans-serif;
+  --font-display: "Aptos Display", "Segoe UI", "Calibri", "Arial", sans-serif;
+
+  --color-ink: #1a2333;
+  --color-paper: #fbfcfe;
+  --color-accent: #0f8a5f;
+  --color-accent-soft: #e6f5ef;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-18deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+}
+
+.bot-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.bot-eye {
+  transform-origin: center;
+  animation: blink 5s infinite;
+}
+
+.bot-arm {
+  transform-origin: 82% 60%;
+  animation: wave 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bot-float,
+  .bot-eye,
+  .bot-arm {
+    animation: none;
+  }
+}
