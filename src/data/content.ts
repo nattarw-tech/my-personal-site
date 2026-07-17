@@ -105,6 +105,13 @@ export const WRITING: Article[] = [
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7477845822542635008/",
   },
   {
+    title: "Tokenising a Heathrow infrastructure project",
+    kind: "Post",
+    teaser:
+      "Designing a tokenised investment marketplace for a real UK infrastructure project at Heathrow: a permissioned chain and a hybrid token that gives investors both a revenue claim and a vote, without breaking compliance.",
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7478241735937175552/",
+  },
+  {
     title: "Four weeks levelling up on AI with Women in Tech UK",
     kind: "Post",
     teaser:
