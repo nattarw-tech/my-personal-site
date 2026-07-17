@@ -6,10 +6,10 @@ export const LINKS = {
 };
 
 export const STATS = [
-  { value: 15, suffix: "", label: "years in regulated environments" },
   { value: 100, suffix: "+", label: "fund portfolios reported on" },
-  { value: 17, suffix: "", label: "RegVarsity modules shipped" },
+  { value: 17, suffix: "", label: "RegVarsity modules" },
   { value: 7, suffix: "", label: "regulators tracked by RegTrack" },
+  { value: 4, suffix: "", label: "projects shipped" },
 ];
 
 export interface Project {

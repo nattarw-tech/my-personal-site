@@ -48,7 +48,7 @@ export default function Home() {
           <p className="mt-5 text-lg max-w-xl opacity-90">
             I&apos;m Nisrin Shoukat Attarwala. Seven years in SEC regulatory reporting at Franklin
             Templeton, now building RegTech and compliance tools in Python. MSc Financial Technology
-            &amp; Innovation at Bayes Business School, London.
+            &amp; Innovation at Bayes Business School, City, University of London.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
@@ -157,23 +157,26 @@ export default function Home() {
           <Robot className="w-28 text-ink dark:text-slate-200 hidden sm:block" />
           <div className="space-y-4 leading-relaxed max-w-2xl">
             <p>
-              I spent 15 years in regulated, accuracy-critical environments, the last seven and a
-              half at Franklin Templeton managing US mutual fund filings through SEC EDGAR across
-              100+ portfolios. Somewhere along the way I noticed that every tedious reporting
+              For over seven years at Franklin Templeton I managed US mutual fund filings through
+              SEC EDGAR across 100+ portfolios, work where a single misplaced figure becomes a
+              regulatory problem. Somewhere along the way I noticed that every tedious reporting
               process was really an automation project wearing a disguise, and I started building
               the tools myself: VBA first, then Python.
             </p>
             <p>
               In 2025 I moved to London for an MSc in Financial Technology &amp; Innovation at Bayes
-              Business School, where I am the elected student representative for my cohort. To learn
-              the UK regime properly I built RegVarsity, a free site that teaches UK and EU
-              financial regulation in plain English. My dissertation looks at checking compliance
-              before a transaction settles on the XRP Ledger.
+              Business School, City, University of London, where I am the elected student
+              representative for my cohort. To learn the UK regime properly I built RegVarsity, a
+              free site that teaches UK and EU financial regulation in plain English. My
+              dissertation looks at checking compliance before a transaction settles on the XRP
+              Ledger.
             </p>
             <p>
-              Off duty you will find me at London&apos;s free tech and AI events (recently a
-              four-week Claude AI working group with Women in Tech UK), at open-source meet-ups, or
-              explaining to anyone who will listen why the FCA Handbook is genuinely interesting.
+              Off duty you will find me at London&apos;s tech and AI events (recently a four-week
+              Claude AI working group with Women in Tech UK), at open-source meet-ups, or explaining
+              to anyone who will listen that regulation is really about trust: in an age where AI
+              makes building easy, the compliance rules we skip past are exactly what protect the
+              customer on the other end.
             </p>
           </div>
         </div>
