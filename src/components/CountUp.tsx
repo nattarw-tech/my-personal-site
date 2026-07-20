@@ -15,10 +15,20 @@ export default function CountUp({ value, suffix = "", durationMs = 1200 }: Count
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+
+    // Guarantee the real number is the resting state even if the animation
+    // never runs (reduced motion, no IntersectionObserver, or requestAnimationFrame
+    // throttled in a background tab). setTimeout still fires in those cases.
+    const fallback = window.setTimeout(() => setDisplay(value), durationMs + 400);
+
+    if (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      typeof IntersectionObserver === "undefined"
+    ) {
       setDisplay(value);
-      return;
+      return () => window.clearTimeout(fallback);
     }
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (!entries[0].isIntersecting || started.current) return;
@@ -32,10 +42,13 @@ export default function CountUp({ value, suffix = "", durationMs = 1200 }: Count
         };
         requestAnimationFrame(tick);
       },
-      { threshold: 0.4 },
+      { threshold: 0.2 },
     );
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, [value, durationMs]);
 
   return (

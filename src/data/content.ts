@@ -8,7 +8,7 @@ export const LINKS = {
 export const STATS = [
   { value: 100, suffix: "+", label: "fund portfolios reported on" },
   { value: 17, suffix: "", label: "RegVarsity modules" },
-  { value: 7, suffix: "", label: "regulators tracked by RegTrack" },
+  { value: 6, suffix: "", label: "regulators tracked by RegTrack" },
   { value: 4, suffix: "", label: "projects shipped" },
 ];
 
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     name: "RegTrack",
     tag: "Compliance ops",
     description:
-      "A live RegTech dashboard that replaces static Excel compliance trackers. Tracks filing obligations across 7 regulators (SEC, FCA, CFTC, HMRC, NFA, Companies House) with a real-time deadline engine, a filing manager that auto-schedules the next cycle, and an AI explainer that generates preparation checklists per filing.",
+      "A live RegTech dashboard that replaces static Excel compliance trackers. Tracks filing obligations across 6 regulators (SEC, FCA, CFTC, HMRC, NFA, Companies House) with a real-time deadline engine, a filing manager that auto-schedules the next cycle, and an AI explainer that generates preparation checklists per filing.",
     stack: "Python, Pandas, Streamlit, Groq / LLaMA 3.3",
     liveUrl:
       "https://regtech-compliance-dashboard-jpeftg6ajanxph3onhb7vb.streamlit.app/",
