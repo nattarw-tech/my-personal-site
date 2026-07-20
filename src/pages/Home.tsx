@@ -1,4 +1,3 @@
-import Robot from "../components/Robot";
 import ThemeToggle from "../components/ThemeToggle";
 import CountUp from "../components/CountUp";
 import { LINKS, PROJECTS, STATS, WRITING } from "../data/content";
@@ -38,45 +37,52 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section id="top" className="max-w-5xl mx-auto px-5 pt-10 pb-16 grid sm:grid-cols-[1fr_auto] gap-10 items-center">
-        <div>
-          <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight">
-            I read the rulebook,
-            <br />
-            then <span className="text-accent">automate the workflow</span>.
-          </h1>
-          <p className="mt-5 text-lg max-w-xl opacity-90">
-            I&apos;m Nisrin Shoukat Attarwala. Seven years in SEC regulatory reporting at Franklin
-            Templeton, now building RegTech and compliance tools in Python. MSc Financial Technology
-            &amp; Innovation at Bayes Business School, City, University of London.
-          </p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <a
-              href={LINKS.cv}
-              download
-              className="rounded-xl bg-accent text-white px-5 py-2.5 font-semibold hover:opacity-90 transition-opacity"
+      <section id="top" className="max-w-4xl mx-auto px-5 pt-14 pb-16">
+        <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight">
+          I read the rulebook,
+          <br />
+          then <span className="text-accent">automate the workflow</span>.
+        </h1>
+        <p className="mt-6 text-lg max-w-2xl opacity-90">
+          I&apos;m Nisrin Shoukat Attarwala. Nearly eight years in SEC regulatory reporting at
+          Franklin Templeton, now building RegTech and compliance tools in Python. MSc Financial
+          Technology &amp; Innovation at Bayes Business School, City, University of London.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-2">
+          {["Regulatory reporting", "RegTech", "Compliance automation", "Python"].map((t) => (
+            <span
+              key={t}
+              className="text-xs font-medium rounded-full bg-accent-soft dark:bg-accent/20 text-accent px-3 py-1"
             >
-              Download CV
-            </a>
-            <a
-              href={LINKS.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-ink/20 dark:border-white/25 px-5 py-2.5 font-semibold hover:bg-accent-soft dark:hover:bg-white/10 transition-colors"
-            >
-              LinkedIn
-            </a>
-            <a
-              href={LINKS.github}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-ink/20 dark:border-white/25 px-5 py-2.5 font-semibold hover:bg-accent-soft dark:hover:bg-white/10 transition-colors"
-            >
-              GitHub
-            </a>
-          </div>
+              {t}
+            </span>
+          ))}
         </div>
-        <Robot wave float className="w-44 sm:w-56 text-ink dark:text-slate-200" />
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href={LINKS.cv}
+            download
+            className="rounded-xl bg-accent text-white px-5 py-2.5 font-semibold hover:opacity-90 transition-opacity"
+          >
+            Download CV
+          </a>
+          <a
+            href={LINKS.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl border border-ink/20 dark:border-white/25 px-5 py-2.5 font-semibold hover:bg-accent-soft dark:hover:bg-white/10 transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={LINKS.github}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl border border-ink/20 dark:border-white/25 px-5 py-2.5 font-semibold hover:bg-accent-soft dark:hover:bg-white/10 transition-colors"
+          >
+            GitHub
+          </a>
+        </div>
       </section>
 
       {/* Stats */}
@@ -152,12 +158,11 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="max-w-5xl mx-auto px-5 py-16">
-        <SectionHeading kicker="The human behind the compliance checks" title="About" />
-        <div className="grid sm:grid-cols-[auto_1fr] gap-8 items-start">
-          <Robot className="w-28 text-ink dark:text-slate-200 hidden sm:block" />
-          <div className="space-y-4 leading-relaxed max-w-2xl">
+        <SectionHeading kicker="Background" title="About" />
+        <div className="max-w-3xl">
+          <div className="space-y-4 leading-relaxed">
             <p>
-              For over seven years at Franklin Templeton I managed US mutual fund filings through
+              For nearly eight years at Franklin Templeton I managed US mutual fund filings through
               SEC EDGAR across 100+ portfolios, work where a single misplaced figure becomes a
               regulatory problem. Somewhere along the way I noticed that every tedious reporting
               process was really an automation project wearing a disguise, and I started building
@@ -214,7 +219,7 @@ export default function Home() {
               alt="QR code linking to Nisrin's LinkedIn profile"
               className="w-36 h-36 mx-auto rounded-lg border border-ink/10"
             />
-            <p className="mt-2 text-xs opacity-70">Scan me. I lead to LinkedIn, not to a rickroll. Promise.</p>
+            <p className="mt-2 text-xs opacity-70">Scan to connect on LinkedIn</p>
           </div>
         </div>
       </section>
@@ -222,7 +227,7 @@ export default function Home() {
       <footer className="border-t border-ink/10 dark:border-white/10">
         <div className="max-w-5xl mx-auto px-5 py-6 text-sm opacity-70 flex items-center justify-between">
           <p>© {new Date().getFullYear()} Nisrin Shoukat Attarwala</p>
-          <p>Made in London with Python-stained hands</p>
+          <p>London, UK</p>
         </div>
       </footer>
     </div>
