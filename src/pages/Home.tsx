@@ -46,7 +46,7 @@ export default function Home() {
           then <span className="text-accent">automate the workflow</span>.
         </h1>
         <p className="mt-6 text-lg max-w-2xl opacity-90">
-          I&apos;m Nisrin Shoukat Attarwala. Nearly eight years in SEC regulatory reporting at
+          I&apos;m Nisrin Shoukat Attarwala. Over seven years in SEC regulatory reporting at
           Franklin Templeton, now building RegTech and compliance tools in Python. MSc Financial
           Technology &amp; Innovation at Bayes Business School, City, University of London.
         </p>
@@ -164,7 +164,7 @@ export default function Home() {
         <div className="max-w-3xl">
           <div className="space-y-4 leading-relaxed">
             <p>
-              For nearly eight years at Franklin Templeton I managed US mutual fund filings through
+              For over seven years at Franklin Templeton I managed US mutual fund filings through
               SEC EDGAR across 100+ portfolios, work where a single misplaced figure becomes a
               regulatory problem. Somewhere along the way I noticed that every tedious reporting
               process was really an automation project wearing a disguise, and I started building
