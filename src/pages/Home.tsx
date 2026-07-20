@@ -15,25 +15,27 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-paper text-ink dark:bg-[#0e1420] dark:text-slate-100 transition-colors">
       {/* Nav */}
-      <header className="max-w-5xl mx-auto flex items-center justify-between px-5 py-5">
-        <a href="#top" className="font-bold text-lg">
-          Nisrin<span className="text-accent">.</span>
-        </a>
-        <nav className="flex items-center gap-4 text-sm">
-          <a href="#projects" className="hover:text-accent transition-colors hidden sm:inline">
-            Projects
+      <header className="sticky top-0 z-50 border-b border-ink/10 dark:border-white/10 bg-paper/80 dark:bg-[#0e1420]/80 backdrop-blur">
+        <div className="max-w-5xl mx-auto flex items-center justify-between px-5 py-4">
+          <a href="#top" className="font-bold text-lg hidden sm:block">
+            Nisrin<span className="text-accent">.</span>
           </a>
-          <a href="#writing" className="hover:text-accent transition-colors hidden sm:inline">
-            Writing
-          </a>
-          <a href="#about" className="hover:text-accent transition-colors hidden sm:inline">
-            About
-          </a>
-          <a href="#contact" className="hover:text-accent transition-colors hidden sm:inline">
-            Contact
-          </a>
-          <ThemeToggle />
-        </nav>
+          <nav className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm">
+            <a href="#projects" className="hover:text-accent transition-colors">
+              Projects
+            </a>
+            <a href="#writing" className="hover:text-accent transition-colors">
+              Writing
+            </a>
+            <a href="#about" className="hover:text-accent transition-colors">
+              About
+            </a>
+            <a href="#contact" className="hover:text-accent transition-colors">
+              Contact
+            </a>
+            <ThemeToggle />
+          </nav>
+        </div>
       </header>
 
       {/* Hero */}
@@ -195,9 +197,10 @@ export default function Home() {
             <p className="text-lg font-semibold">
               Looking for someone who speaks both regulation and Python?
             </p>
-            <p className="mt-2 opacity-90 max-w-md">
-              I am open to regulatory reporting, RegTech implementation, compliance technology and
-              AI governance roles in the UK. Full right to work, no sponsorship required.
+            <p className="mt-2 opacity-90 max-w-xl">
+              I am open to roles across fintech, RegTech, financial services and consulting that
+              draw on my experience in regulatory reporting, compliance automation, RegTech
+              implementation, financial analysis and market data, in the UK and internationally.
             </p>
             <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold">
               <a href={`mailto:${LINKS.email}`} className="text-accent hover:underline">
