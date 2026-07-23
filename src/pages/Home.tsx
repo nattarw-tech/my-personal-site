@@ -46,8 +46,9 @@ export default function Home() {
           then <span className="text-accent">automate the workflow</span>.
         </h1>
         <p className="mt-6 text-lg max-w-2xl opacity-90">
-          I&apos;m Nisrin Shoukat Attarwala. Over seven years in SEC regulatory reporting at
-          Franklin Templeton, now building RegTech and compliance tools in Python. MSc Financial
+          I&apos;m Nisrin Shoukat Attarwala. Fifteen years in regulated operations, from legal and
+          regulatory publishing at Thomson Reuters to over seven years of SEC regulatory reporting
+          at Franklin Templeton. Now building RegTech and compliance tools in Python. MSc Financial
           Technology &amp; Innovation at Bayes Business School, City, University of London.
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
@@ -164,9 +165,14 @@ export default function Home() {
         <div className="max-w-3xl">
           <div className="space-y-4 leading-relaxed">
             <p>
-              For over seven years at Franklin Templeton I managed US mutual fund filings through
-              SEC EDGAR across 100+ portfolios, work where a single misplaced figure becomes a
-              regulatory problem. Somewhere along the way I noticed that every tedious reporting
+              I started at Thomson Reuters, from 2010 to 2018, in legal and regulatory publishing
+              operations for US Westlaw. I ended up leading a team of twelve and redesigning the
+              new-hire training plan, which cut onboarding from six months to three.
+            </p>
+            <p>
+              Then over seven years at Franklin Templeton, managing US mutual fund and ETF filings
+              through SEC EDGAR across 100+ portfolios, work where a single misplaced figure becomes
+              a regulatory problem. Somewhere along the way I noticed that every tedious reporting
               process was really an automation project wearing a disguise, and I started building
               the tools myself: VBA first, then Python.
             </p>
